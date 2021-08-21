@@ -70,7 +70,6 @@ document.getElementById('promo-submit').addEventListener('click', function(){
         debugger;
         totalPriceDiscount = (totalPrice * 20) / 100;
         totalPrice = totalPrice - totalPriceDiscount;
-        document.getElementById('total-price').innerText = totalPrice;
         document.getElementById('footer-total-price').innerText = totalPrice;
         usedCode.push(promoField.value);
         document.getElementById('promo-submit').style.display = 'none';
