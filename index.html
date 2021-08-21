@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMac 24 Inch M1 2021</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Section -->
+    <main class="mt-16">
+        <!-- Product Customization -->
+        <div class="container mx-auto">
+            <div class="grid grid-cols-2 gap-x-20">
+                <div class="product-img">
+                    <img class="max-w-full" src="images/mac.png" alt="">
+                </div>
+                <div class="product-customization">
+                    <h1 class="text-4xl font-semibold">Customize your Blue 24-inch<br>iMac with Apple M1 chip.</h1>
+                    <p class="max-w-xl mt-5">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 8-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+                    <!-- Product Customization Options-->
+                    <div class="product-option-list mt-8">
+                        <!-- Memory Option -->
+                        <div class="single-product-option">
+                            <h4 class="text-sm font-bold">Memory</h4>
+                            <div class="flex gap-x-2 option-buttons mt-2">
+                                <button id="eight-gb" class="border rounded py-1 px-2 border-gray-500 focus:ring-2 focus:ring-blue-600 transition">8GB unified memory</button>
+                                <button id="sixteen-gb" class="border rounded py-1 px-2 border-gray-500 focus:ring-2 focus:ring-blue-600 transition">16GB unified memory</button>
+                            </div>
+                        </div>
+
+                        <!-- Storage Option -->
+                        <div class="single-product-option mt-8">
+                            <h4 class="text-sm font-bold">Storage</h4>
+                            <div class="flex gap-x-2 option-buttons mt-2">
+                                <button id="storage256" class="border rounded py-1 px-2 border-gray-500 focus:ring-2 focus:ring-blue-600 transition">256GB SSD storage</button>
+                                <button id="storage512" class="border rounded py-1 px-2 border-gray-500 focus:ring-2 focus:ring-blue-600 transition">512GB SSD storage</button>
+                               <button id="storage1" class="border rounded py-1 px-2 border-gray-500 focus:ring-2 focus:ring-blue-600 transition">1TB SSD storage</button>
+
+                            </div>
+                        </div>
+
+                        <!-- Delivery Option -->
+                        <div class="single-product-option mt-8">
+                            <h4 class="text-sm font-bold">Choose your delivery option</h4>
+                            <div class="flex gap-x-2 option-buttons mt-2">
+                                <button id="free-delivery" class="border rounded py-1 px-2 border-gray-500 focus:ring-2 focus:ring-blue-600 transition">Friday August 25 FREE Prime Delivery</button>
+                                <button id="fast-delivery" class="border rounded py-1 px-2 border-gray-500 focus:ring-2 focus:ring-blue-600 transition">Friday, August 21 $20 Delivery</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- Checkout Form Start-->
+                    <div class="checkout-reciept mt-12 font-bold max-w-xs">
+                       <div class="flex single-field justify-between border-0 border-b pb-2 px-3">
+                            <h4>Base Price</h4> 
+                            <h4>$<span id="base-amount">1299</span></h4> 
+                       </div>
+                       
+                       <div class="flex py-2 single-field justify-between border-0 border-b pb-2 px-3">
+                            <h4>Extra Memory Cost</h4> 
+                            <h4>$<span id="memory-amount">0</span></h4> 
+                       </div>
+                       <div class="flex py-2 single-field justify-between border-0 border-b pb-2 px-3">
+                            <h4>Extra Storage Cost</h4> 
+                            <h4>$<span id="storage-amount">0</span></h4>
+                       </div>
+                       <div class="flex py-2 single-field justify-between border-0 border-b-2 border-black pb-2 px-3">
+                            <h4>Delivery Charge</h4> 
+                            <h4>$<span id="delivery-amount">0</span></h1> 
+                       </div>
+
+                       <div class="flex py-2 single-field justify-between border-0 border-b border-0 pb-2 px-3">
+                            <h4>Total Price</h4> 
+                            <h4>$<span id="total-price">1299</span></h4> 
+                       </div>
+
+                       <div class="promo-code-field mt-5">
+                           <h4 class="text-sm font-medium">Add Promo Code</h4>
+                           
+                               <input id="promo-field" class="border rounded mt-2" type="text">
+                               <button id="promo-submit" class="bg-red-500 text-white py-1 px-2 rounded text-sm -ml-4" type="submit">Apply</button>
+                          
+                       </div>
+                    </div>
+                
+                    <!-- Checkout Form End-->
+                </div>
+                <!-- Product Customization End -->
+                
+            </div>
+        </div>
+    </main>
+    <!-- Main Section End-->
+    <!-- Total Price Footer Starts -->
+    <footer class="mt-16">
+        <div class="container mx-auto border-0 border-t">
+            <h1 class="text-4xl font-bold text-center mt-3">Total: $ <span id="footer-total-price">1299</span> </h1>
+        </div>
+    </footer>
+    <!-- Total Price Footer Ends -->
+    <script src="js/script.js"></script>
+</body>
+</html>
